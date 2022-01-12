@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion/>
+
+    <artifactId>design</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <groupId>com.zhaoyd</groupId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>pattern-factory</module>
+        <module>pattern-abstract-factory</module>
+        <module>pattern-create</module>
+        <module>pattern-prototype</module>
+        <module>pattern-single</module>
+        <module>pattern-adapter</module>
+        <module>pattern-bridge</module>
+        <module>pattern-combination</module>
+        <module>pattern-decorator</module>
+        <module>pattern-flyweight</module>
+        <module>pattern-proxy</module>
+        <module>pattern-chain-responsibility</module>
+        <module>pattern-command</module>
+        <module>pattern-iterator</module>
+        <module>pattern-mediator</module>
+        <module>pattern-memorandum</module>
+        <module>pattern-observers</module>
+        <module>pattern-status</module>
+        <module>pattern-strategy</module>
+        <module>pattern-template</module>
+        <module>pattern-face</module>
+        <module>pattern-facede-door</module>
+        <module>pattern-visitor</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>
