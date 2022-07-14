@@ -10,6 +10,7 @@ public class Parent implements Visitor {
 
     Logger logger = LoggerFactory.getLogger(Parent.class);
 
+
     @Override
     public void visit(Student student) {
         logger.info("学生信息 姓名：{} 班级：{} 排名：{}", student.name, student.clazz, student.ranking());

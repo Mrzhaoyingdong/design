@@ -4,11 +4,13 @@ import com.alibaba.fastjson.JSON;
 import com.zhaoyd6.patternface.door.goods.DeliverReq;
 import com.zhaoyd6.patternface.door.goods.GoodsService;
 import com.zhaoyd6.patternface.door.store.ICommodity;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
+@Slf4j
 public class GoodsCommodityService implements ICommodity {
 
     private Logger logger = LoggerFactory.getLogger(GoodsCommodityService.class);
@@ -25,7 +27,7 @@ public class GoodsCommodityService implements ICommodity {
         deliverReq.setConsigneeUserPhone(extMap.get("consigneeUserPhone"));
         deliverReq.setConsigneeUserAddress(extMap.get("consigneeUserAddress"));
         Boolean isSuccess = goodsService.deliverGoods(deliverReq);
-        logger.info("请求参数[优惠券] => uId:{} commodityId:{} bizId:{} extMap:{}", uId, commodityId, bizId, JSON.toJSON(extMap));
+        log.info("请求参数[优惠券] => uId:{} commodityId:{} bizId:{} extMap:{}", uId, commodityId, bizId, JSON.toJSON(extMap));
         logger.info("测试结果[优惠券]:{}", isSuccess);
         if (!isSuccess) throw new RuntimeException("ਫᇔࠟݎߝන०ᨳ");
     }
